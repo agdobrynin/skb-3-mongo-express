@@ -11,7 +11,7 @@ import isAdmin from './middleware/isAdmin';
 
 mongoose.Promise = Promise;
 //Connect 2 database
-const config = require('./env.json');
+import config from './config';
 mongoose.connect(`${config.dbMongo}`);
 
 const app = express();
